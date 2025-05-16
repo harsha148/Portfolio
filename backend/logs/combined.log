@@ -1,0 +1,24 @@
+2025-05-16 14:45:03:453 [32minfo[39m: [32mServer is running on port 8001[39m
+2025-05-16 14:45:03:453 [32minfo[39m: [32mEnvironment: development[39m
+2025-05-16 14:45:03:453 [32minfo[39m: [32mCORS origin: http://localhost:3000[39m
+2025-05-16 14:45:06:456 [32minfo[39m: [32mServer is running on port 8001[39m
+2025-05-16 14:45:06:456 [32minfo[39m: [32mEnvironment: development[39m
+2025-05-16 14:45:06:456 [32minfo[39m: [32mCORS origin: http://localhost:3000[39m
+2025-05-16 14:45:57:4557 [32minfo[39m: [32mServer is running on port 8001[39m
+2025-05-16 14:45:57:4557 [32minfo[39m: [32mEnvironment: development[39m
+2025-05-16 14:45:57:4557 [32minfo[39m: [32mCORS origin: http://localhost:3000[39m
+2025-05-16 14:46:18:4618 [35mhttp[39m: [35mGET /api/projects/technologies[39m
+2025-05-16 14:46:18:4618 [34mdebug[39m: [34mRequest Body: undefined[39m
+2025-05-16 14:46:18:4618 [34mdebug[39m: [34mRequest Query: {}[39m
+2025-05-16 14:46:18:4618 [34mdebug[39m: [34mRequest Params: {}[39m
+2025-05-16 14:46:18:4618 [33mwarn[39m: [33mGET /api/projects/technologies 404 - 3ms[39m
+2025-05-16 14:47:12:4712 [35mhttp[39m: [35mGET /api/technologies[39m
+2025-05-16 14:47:12:4712 [34mdebug[39m: [34mRequest Body: undefined[39m
+2025-05-16 14:47:12:4712 [34mdebug[39m: [34mRequest Query: {}[39m
+2025-05-16 14:47:12:4712 [34mdebug[39m: [34mRequest Params: {}[39m
+2025-05-16 14:47:12:4712 [32minfo[39m: [32mGET /technologies 200 - 265ms[39m
+2025-05-16 14:47:17:4717 [35mhttp[39m: [35mGET /api/technologies/backend[39m
+2025-05-16 14:47:17:4717 [34mdebug[39m: [34mRequest Body: undefined[39m
+2025-05-16 14:47:17:4717 [34mdebug[39m: [34mRequest Query: {}[39m
+2025-05-16 14:47:17:4717 [34mdebug[39m: [34mRequest Params: {}[39m
+2025-05-16 14:47:17:4717 [32minfo[39m: [32mGET /technologies/backend 200 - 132ms[39m
