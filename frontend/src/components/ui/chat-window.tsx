@@ -45,12 +45,24 @@ export function ChatWindow({ isOpen }: ChatWindowProps) {
     setIsLoading(true);
 
     try {
-      // TODO: Implement API call to backend
-      const response = await fetch('/api/chat', {
+      // Convert messages to the format expected by the backend
+      const conversationHistory = messages.map(msg => ({
+        content: msg.content,
+        role: msg.role,
+      }));
+
+      const response = await fetch('http://localhost:8001/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: userMessage.content }),
+        body: JSON.stringify({
+          message: userMessage.content,
+          conversation_history: conversationHistory,
+        }),
       });
+
+      if (!response.ok) {
+        throw new Error('Failed to get response from chat API');
+      }
 
       const data = await response.json();
       
@@ -64,7 +76,6 @@ export function ChatWindow({ isOpen }: ChatWindowProps) {
       setMessages((prev) => [...prev, assistantMessage]);
     } catch (error) {
       console.error('Error sending message:', error);
-      // Add error message to chat
       setMessages((prev) => [
         ...prev,
         {
